@@ -251,31 +251,31 @@ body {
 }
 
 .layer-0 {
-  background-image: url('/assets/bg-sky-min.png');
+  background-image: url('assets/bg-sky-min.png');
 }
 
 .layer-1 {
-  background-image: url('/assets/bg-hills-back-min.png');
+  background-image: url('assets/bg-hills-back-min.png');
 }
 
 .layer-2 {
-  background-image: url('/assets/bg-hills-front-min.png');
+  background-image: url('assets/bg-hills-front-min.png');
 }
 
 .layer-3 {
-  background-image: url('/assets/bg-sun-min.png');
+  background-image: url('assets/bg-sun-min.png');
 }
 
 .layer-4 {
-  background-image: url('/assets/bg-trees-min.png');
+  background-image: url('assets/bg-trees-min.png');
 }
 
 .layer-5 {
-  background-image: url('/assets/bg-ground-min.png');
+  background-image: url('assets/bg-ground-min.png');
 }
 
 .layer-6 {
-  background-image: url('/assets/bg-characters-min.png');
+  background-image: url('assets/bg-characters-min.png');
 }
 
 @media only screen and (max-width: 30em) {
@@ -414,7 +414,7 @@ body {
 }
 
 .features-avatar > .features-content {
-  background-image: url('/assets/lady-and-bear-hiker-min.png');
+  background-image: url('assets/lady-and-bear-hiker-min.png');
 
   background-size: 60%;
   background-repeat: no-repeat;
@@ -422,7 +422,7 @@ body {
 }
 
 .features-badges > .features-content {
-  background-image: url('/assets/backpack-min.png');
+  background-image: url('assets/backpack-min.png');
 
   background-size: 50%;
   background-repeat: no-repeat;
@@ -430,7 +430,7 @@ body {
 }
 
 .features-data > .features-content {
-  background-image: url('/assets/map.png');
+  background-image: url('assets/map.png');
 
   background-size: 80%;
   background-repeat: no-repeat;
@@ -438,7 +438,7 @@ body {
 }
 
 .features-playlist > .features-content {
-  background-image: url('/assets/app-screen-playlist-min.png');
+  background-image: url('assets/app-screen-playlist-min.png');
 
   background-size: 35%;
   background-repeat: no-repeat;
@@ -597,7 +597,7 @@ body {
 
 .mid-divider {
   height: clamp(150px, 25vw, 300px);
-  background-image: url('/assets/divider-banner-min.png');
+  background-image: url('assets/divider-banner-min.png');
   background-size: cover;
   background-position: right center;
   background-repeat: repeat-x;
@@ -667,7 +667,7 @@ body {
   border-radius: 10px;
   padding: 3rem;
   margin-block: var(--block-space-sm);
-  background: url('/assets/bg-sky-min.png'), rgba(14, 35, 52, 0.5);
+  background: url('assets/bg-sky-min.png'), rgba(14, 35, 52, 0.5);
 
   background-size: cover;
   background-position: center;
@@ -695,7 +695,7 @@ body {
 /* footer */
 
 .footer-divider {
-  background-image: url('/assets/camping-gear-min.png');
+  background-image: url('assets/camping-gear-min.png');
   height: clamp(125px, 20vw, 250px);
   background-size: contain;
   background-position: right bottom;
