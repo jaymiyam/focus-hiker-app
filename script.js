@@ -24,38 +24,47 @@ themeToggle.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', (event) => {
   gsap.registerPlugin(ScrollTrigger);
 
-  const parallaxLayers = gsap.utils.toArray('.parallax');
+  // create
+  let mm = gsap.matchMedia();
 
-  parallaxLayers.forEach((layer) => {
-    const depth = layer.dataset.depth;
-    const distance = -(layer.offsetHeight * depth);
+  // add a media query. When it matches, the associated function will run
+  mm.add('(min-width: 1200px)', () => {
+    const parallaxLayers = gsap.utils.toArray('.parallax');
 
-    const tl = gsap.to(layer, { y: distance, ease: 'none' }, 0);
+    parallaxLayers.forEach((layer) => {
+      const depth = layer.dataset.depth;
+      const distance = -(layer.offsetHeight * depth);
 
-    ScrollTrigger.create({
-      trigger: '.hero',
-      start: 'top top',
-      end: 'bottom top',
-      scrub: true,
-      animation: tl,
+      const tl = gsap.to(layer, { y: distance, ease: 'none' }, 0);
+
+      ScrollTrigger.create({
+        trigger: '.hero',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+        animation: tl,
+      });
     });
+
+    const dividerAni = gsap.from(
+      '.mid-divider',
+      {
+        xPercent: -85,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.mid-divider-wrapper',
+          start: 'top 85%',
+          end: 'bottom 60%',
+          scrub: 1,
+          // markers: true,
+        },
+      },
+      0
+    );
   });
 
-  const dividerAni = gsap.from(
-    '.mid-divider',
-    {
-      xPercent: -85,
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '.mid-divider-wrapper',
-        start: 'top 85%',
-        end: 'bottom 60%',
-        scrub: 1,
-        // markers: true,
-      },
-    },
-    0
-  );
+  // later, if we need to revert all the animations/ScrollTriggers...
+  //   mm.revert();
 
   const fadeLayers = gsap.utils.toArray('.fade-in');
 

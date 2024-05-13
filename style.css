@@ -357,7 +357,7 @@ body {
 .intro-heading {
   font-size: var(--fs-800);
   font-family: var(--ff-heading);
-  font-weight: normal;
+  font-weight: bold;
   color: var(--clr-text-primary);
   letter-spacing: var(--letter-spacing);
 }
@@ -447,6 +447,7 @@ body {
 
 .features-content > h3 {
   font-family: var(--ff-heading);
+  font-weight: bold;
   font-size: var(--fs-700);
   line-height: 1;
   color: var(--clr-text-primary);
@@ -535,6 +536,7 @@ body {
 
 .content-subheading {
   font-family: var(--ff-heading);
+  font-weight: bold;
   font-size: var(--fs-700);
   line-height: 1;
   color: var(--clr-text-primary);
@@ -639,6 +641,7 @@ body {
 
 .statistics-body {
   font-family: var(--ff-heading);
+  font-weight: bold;
   font-size: var(--fs-700);
   line-height: 1;
   padding-block: 1rem 0.5rem;
@@ -718,6 +721,7 @@ footer > .container {
 
 .footer-logo {
   font-family: var(--ff-heading);
+  font-weight: bold;
   font-size: var(--fs-700);
 }
 
