@@ -8,14 +8,14 @@ themeToggle.addEventListener('click', () => {
 
   if (currentTheme === 'light') {
     themeToggleText.textContent = 'Light mode';
-    themeToggleIcon.innerHTML = `<use href="/assets/icon-sun.svg#icon-sun" />`;
+    themeToggleIcon.innerHTML = `<use href="assets/icon-sun.svg#icon-sun" />`;
     document.documentElement.setAttribute('data-theme', 'dark');
-    heroAppScreen.src = '/assets/hero-app-screen-dark-min.png';
+    heroAppScreen.src = 'assets/hero-app-screen-dark-min.png';
   } else {
     themeToggleText.textContent = 'Dark mode';
-    themeToggleIcon.innerHTML = `<use href="/assets/icon-moon.svg#icon-moon" />`;
+    themeToggleIcon.innerHTML = `<use href="assets/icon-moon.svg#icon-moon" />`;
     document.documentElement.setAttribute('data-theme', 'light');
-    heroAppScreen.src = '/assets/hero-app-screen-light-min.png';
+    heroAppScreen.src = 'assets/hero-app-screen-light-min.png';
   }
 });
 
